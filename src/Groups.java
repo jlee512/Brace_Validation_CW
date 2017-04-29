@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Created by julia on 29/04/2017.
+ * Created by Julian on 29/04/2017.
  */
 public class Groups {
 
@@ -26,11 +26,7 @@ public class Groups {
                 }
             }
         }
-        if (openingBraces.peek() == null) {
-            return true;
-        } else {
-            return false;
-        }
+        return openingBraces.peek() == null;
     }
 
     public static void main(String[] args) {
